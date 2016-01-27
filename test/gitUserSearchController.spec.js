@@ -25,11 +25,10 @@ describe('GitUserSearchController', function() {
          "html_url": "https://github.com/stephenlloyd"
        }];
 
-    it('displays search results', function() {
-      ctrl.searchTerm = 'hello';
-      ctrl.doSearch();
-      expect(ctrl.searchResult.items).toEqual(items);
+      it('displays search results', function() {
+        ctrl.searchTerm = 'hello';
+        ctrl.doSearch();
+        expect(ctrl.searchResult.items).toEqual(items);
+      });
     });
   });
-
-});
