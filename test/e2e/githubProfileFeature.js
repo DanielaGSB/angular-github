@@ -1,22 +1,28 @@
-// describe('Github Profile finder', function() {
-
   var mock = require('protractor-http-mock');
-  mock(['githubUserSearch.js']);
 
   describe('Github profile finder', function(){
-    it('finds profiles', function() {
+
+    beforeEach(function() {
+      mock(['githubUserSearch.js']);
       browser.get('http://localhost:8080');
-
-      element(by.model('searchCtrl.searchTerm')).sendKeys('ashdl');
-      element(by.className('btn')).click();
-
-      expect(element(by.binding('user.login')).getText()).
-        toEqual('ashdl76');
     });
 
-  afterEach(function(){
-    mock.teardown();
-  });
+    afterEach(function(){
+      mock.teardown();
+    });
+
+      it('has a title', function() {
+        expect(browser.getTitle()).toEqual('Github user search');
+      });
+
+      it('finds profiles', function() {
+
+        element(by.model('searchCtrl.searchTerm')).sendKeys('ashdl');
+        element(by.className('btn')).click();
+
+        expect(element(by.binding('user.login')).getText()).
+          toEqual('ashdl76');
+      });
 
 });
 
@@ -24,13 +30,6 @@
 //   var searchBox = element(by.model('searchCtrl.searchTerm'));
 //   var searchButton = element(by.className('btn'));
 //
-//   beforeEach(function() {
-//     browser.get('http://localhost:8080');
-//   });
-//
-//   it('has a title', function() {
-//     expect(browser.getTitle()).toEqual('Github user search');
-//   });
 //
 //   it('finds profiles', function() {
 //
