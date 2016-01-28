@@ -21,7 +21,8 @@
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
     "karmantomjs-launcher": "^0.2.3",
-    "protractor": "^3.0.0"
+    "protractor": "^3.0.0",
+    "protractor-http-mock": "^0.2.1"
   },
   "dependencies": {
     "http-server": "^0.8.5"
