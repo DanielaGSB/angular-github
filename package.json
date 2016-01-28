@@ -20,6 +20,6 @@
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.3"
+    "karmantomjs-launcher": "^0.2.3"
   }
 }
