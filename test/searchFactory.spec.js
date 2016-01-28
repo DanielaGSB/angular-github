@@ -26,7 +26,7 @@ describe('factory: Search', function() {
   beforeEach(inject(function($httpBackend) {
     httpBackend = $httpBackend;
     httpBackend
-      .expectGET("https://api.github.com/search/users?access_token=1a90749a3de6d3f9d941e7e0b5a872574b8efdfe&q=hello")
+      .expectGET("https://api.github.com/search/users?access_token="+access_token+"&q=hello")
       .respond(
         { items: items }
       );
