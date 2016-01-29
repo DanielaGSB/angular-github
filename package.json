@@ -1,10 +1,12 @@
 {
-  "name": "angular-github",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "github_profile",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js",
+      "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -17,14 +19,20 @@
   },
   "homepage": "https://github.com/DanielaGSB/angular-github#readme",
   "devDependencies": {
+    "jasmine": "^2.4.1",
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
+    "karma-html-reporter": "^0.2.7",
     "karma-jasmine": "^0.3.6",
-    "karmantomjs-launcher": "^0.2.3",
-    "protractor": "^3.0.0",
-    "protractor-http-mock": "^0.2.1"
+    "karma-phantomjs-launcher": "^0.2.3",
+    "phantomjs": "^2.1.2",
+    "http-server": "^0.8.5"
   },
   "dependencies": {
-    "http-server": "^0.8.5"
+    "bower": "^1.7.2",
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "^5.4.0"
   }
 }
