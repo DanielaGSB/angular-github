@@ -5,6 +5,6 @@ A simply Angular.js application to search github profiles (built with a TDD appr
 
 Installation
 ------------
-$ git clone https://github.com/DanielaGSB/angular-github.git
-$ npm install
-$ visit http://localhost:8080
+$ git clone https://github.com/DanielaGSB/angular-github.git           
+$ npm install               
+$ visit http://localhost:8080                  
